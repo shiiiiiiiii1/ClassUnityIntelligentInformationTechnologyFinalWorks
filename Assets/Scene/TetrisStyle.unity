@@ -162,6 +162,47 @@ MonoBehaviour:
   m_EnableInterimResults: 1
   m_Transcript: {fileID: 0}
   m_Language: ja-JP
+--- !u!1 &86170696
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 86170698}
+  - component: {fileID: 86170697}
+  m_Layer: 0
+  m_Name: CheckGuidlineBlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &86170697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 86170696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31aea462ae9db4b3084f1fc1f20d9ad0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guidline_group: {fileID: 746987939}
+--- !u!4 &86170698
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 86170696}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 608215541}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &446854238
 GameObject:
   m_ObjectHideFlags: 0
@@ -172,7 +213,7 @@ GameObject:
   - component: {fileID: 446854239}
   - component: {fileID: 446854240}
   m_Layer: 10
-  m_Name: Marker scene
+  m_Name: Marker scene hiro
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -188,10 +229,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 523211896}
   - {fileID: 789060308}
   - {fileID: 2123509603}
   m_Father: {fileID: 749452075}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &446854240
 MonoBehaviour:
@@ -207,6 +249,112 @@ MonoBehaviour:
   secondsToRemainVisible: 0
   eventReceiver: {fileID: 0}
   _markerTag: hiro
+--- !u!1 &517178031
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 517178032}
+  - component: {fileID: 517178033}
+  m_Layer: 10
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &517178032
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 517178031}
+  m_LocalRotation: {x: 0.1913417, y: 0.46193972, z: -0.46193972, w: 0.73253787}
+  m_LocalPosition: {x: -10, y: 15, z: -10}
+  m_LocalScale: {x: 1.0000002, y: 1.0000005, z: 1.0000002}
+  m_Children: []
+  m_Father: {fileID: 749452075}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 45, y: 45, z: -45}
+--- !u!108 &517178033
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 517178031}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+--- !u!1 &523211895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 523211896}
+  - component: {fileID: 523211897}
+  m_Layer: 0
+  m_Name: CheckRandomBlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &523211896
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 523211895}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 446854239}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &523211897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 523211895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3588c08598ca94b0e88836747d3289e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  random_block: {fileID: 789060307}
 --- !u!1 &531169406
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +479,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 749452075}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &597956061
 MonoBehaviour:
@@ -409,6 +557,96 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!1 &608215540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 608215541}
+  - component: {fileID: 608215542}
+  m_Layer: 10
+  m_Name: Marker scene kanji
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &608215541
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 608215540}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 86170698}
+  - {fileID: 746987940}
+  m_Father: {fileID: 749452075}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &608215542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 608215540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e02d1ce5da0c446acaea956b6ae07690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsToRemainVisible: 0
+  eventReceiver: {fileID: 0}
+  _markerTag: kanji
+--- !u!1 &746987939
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 746987940}
+  - component: {fileID: 746987941}
+  m_Layer: 0
+  m_Name: GuidlineBlock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &746987940
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 746987939}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 608215541}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &746987941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 746987939}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c2f7e856abc94d74af26d2bf01e3146, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 1518682618323768, guid: c24ca8a03106d4679814bbb0af2af24f, type: 2}
+  red: {fileID: 2100000, guid: 2a27daff0c52c4dec9dfa1c843d8a7a5, type: 2}
+  green: {fileID: 2100000, guid: 0b5324720837e45e7bd929e91a2abb82, type: 2}
+  blue: {fileID: 2100000, guid: 0f8594932b5254c54b56e390cc7ad32a, type: 2}
+  yellow: {fileID: 2100000, guid: 891254f78e24d4f188888567cb9a4f77, type: 2}
 --- !u!1 &749452074
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,9 +673,11 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 597956060}
   - {fileID: 1562006353}
+  - {fileID: 517178032}
+  - {fileID: 597956060}
   - {fileID: 446854239}
+  - {fileID: 608215541}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -477,11 +717,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 789060307}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: -9}
+  m_LocalPosition: {x: 0, y: -0, z: -15}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 446854239}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &789060309
 MonoBehaviour:
@@ -677,6 +917,7 @@ GameObject:
   - component: {fileID: 1192976671}
   - component: {fileID: 1192976670}
   - component: {fileID: 1192976669}
+  - component: {fileID: 1192976673}
   - component: {fileID: 1192976672}
   m_Layer: 0
   m_Name: ARToolKit
@@ -973,6 +1214,192 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
   m_StereoMirrorMode: 0
+--- !u!114 &1192976673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1192976668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ed68815202b64d4c956d71c0f176088, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkerType: 0
+  Tag: kanji
+  PatternFilenameIndex: 1
+  PatternFilename: patt.kanji
+  PatternContents: " 214 225 240 225 214 240 216 204 214 227 181 192 198 192 181 192\n
+    240 240 240 240 240 240 225 232 240 240 240 240 240 240 240 236\n 240 240 240
+    240 240 240  75 128 220 240 240 240 240 240 240 240\n 240 240 240 240 240 240
+    106  53 240 240 240 240 240 240 240 237\n 240 240 240 240 240 238 118  31 240
+    240 240 240 240 240 240 234\n 240 240 240 240 240 240  74  49 207 240 240 240
+    240 240 240 240\n 240 240 240 240 240 240  53  54 177 240 240 240 240 240 240
+    240\n 240 240 240 240 240 240  64  31 130 240 240 240 240 240 240 219\n 240 240
+    240 240 240 180  37  57  78 228 240 240 240 240 240 240\n 240 240 240 240 240
+    118  62 157  36 185 240 240 240 240 240 231\n 240 240 240 240 240  82  65 225
+    \ 67  80 230 240 240 240 240 217\n 240 240 240 225  53  76 225 240 156  62 158
+    240 240 240 240 226\n 240 240 199  61   9 111 235 240 240 104  58 174 228 240
+    240 240\n 240 142  64  26  92 227 240 240 240 229  93  64 170 226 238 216\n  90
+    \ 26  12 156 240 240 240 240 240 240 204  95  30 117 192 200\n 156  16 195 233
+    235 240 236 240 238 239 240 186  93  53 120 237\n 214 226 240 225 212 240 216
+    204 212 226 181 192 198 192 185 194\n 240 240 240 240 240 240 227 232 240 240
+    240 240 240 240 240 238\n 240 240 240 240 240 240  95 138 225 240 240 240 240
+    240 240 240\n 240 240 240 240 240 240 108  59 240 240 240 240 240 240 240 237\n
+    240 240 240 240 240 238 118  31 240 240 240 240 240 240 240 234\n 240 240 240
+    240 240 240  83  47 207 240 240 240 240 240 240 240\n 240 240 240 240 240 240
+    \ 56  49 177 240 240 240 240 240 240 240\n 240 240 240 240 240 240  73  41 130
+    240 240 240 240 240 240 222\n 240 240 240 240 240 185  46  49  86 230 240 240
+    240 240 240 240\n 240 240 240 240 240 118  58 165  45 192 240 240 240 240 240
+    234\n 240 240 240 240 240  91  63 222  74  82 240 240 240 240 240 222\n 240 240
+    240 226  66  86 225 240 158  63 162 240 240 240 240 228\n 240 240 202  76  11
+    103 235 240 234  91  49 174 228 240 240 240\n 240 142  68  16  91 226 240 240
+    240 228  96  74 178 233 239 222\n  90  26   4 150 240 240 240 240 240 240 213
+    109  46 133 204 213\n 156  14 195 234 236 240 237 240 239 240 240 192 106  57
+    125 238\n 214 226 240 225 212 240 216 204 214 227 181 192 198 192 184 192\n 240
+    240 240 240 240 240 226 232 240 240 240 240 240 240 240 236\n 240 240 240 240
+    240 240  85 134 220 240 240 240 240 240 240 240\n 240 240 240 240 240 240 107
+    \ 58 240 240 240 240 240 240 240 237\n 240 240 240 240 240 238 118  32 240 240
+    240 240 240 240 240 234\n 240 240 240 240 240 240  87  60 210 240 240 240 240
+    240 240 240\n 240 240 240 240 240 240  58  58 178 240 240 240 240 240 240 240\n
+    240 240 240 240 240 240  73  31 130 240 240 240 240 240 240 219\n 240 240 240
+    240 240 185  46  59  86 228 240 240 240 240 240 240\n 240 240 240 240 240 118
+    \ 62 168  41 186 240 240 240 240 240 231\n 240 240 240 240 240  90  65 225  60
+    \ 92 235 240 240 240 240 219\n 240 240 240 225  53  82 225 240 146  63 163 240
+    240 240 240 228\n 240 240 198  61   5 103 235 240 234 102  58 175 232 240 240
+    240\n 240 134  54  13  91 226 240 240 240 229  96  68 188 238 239 222\n  90  15
+    \  3 150 240 240 240 240 240 240 213 105  48 134 204 213\n 156  14 195 233 236
+    240 237 240 239 239 240 192 106  57 125 238\n\n 192 236 240 237 234 240 240 219
+    240 231 217 226 240 216 200 237\n 181 240 240 240 240 240 240 240 240 240 240
+    240 240 238 192 120\n 192 240 240 240 240 240 240 240 240 240 240 240 240 226
+    117  53\n 198 240 240 240 240 240 240 240 240 240 240 240 228 170  30  93\n 192
+    240 240 240 240 240 240 240 240 240 240 240 174  64  95 186\n 181 240 240 240
+    240 240 240 240 240 240 230 158  58  93 204 240\n 227 240 240 240 240 240 240
+    240 228 185  80  62 104 229 240 239\n 214 240 220 240 240 207 177 130  78  36
+    \ 67 156 240 240 240 238\n 204 232 128  53  31  49  54  31  57 157 225 240 240
+    240 240 240\n 216 225  75 106 118  74  53  64  37  62  65 225 235 240 240 236\n
+    240 240 240 240 238 240 240 240 180 118  82  76 111 227 240 240\n 214 240 240
+    240 240 240 240 240 240 240 240  53   9  92 240 235\n 225 240 240 240 240 240
+    240 240 240 240 240 225  61  26 156 233\n 240 240 240 240 240 240 240 240 240
+    240 240 240 199  64  12 195\n 225 240 240 240 240 240 240 240 240 240 240 240
+    240 142  26  16\n 214 240 240 240 240 240 240 240 240 240 240 240 240 240  90
+    156\n 194 238 240 237 234 240 240 222 240 234 222 228 240 222 213 238\n 185 240
+    240 240 240 240 240 240 240 240 240 240 240 239 204 125\n 192 240 240 240 240
+    240 240 240 240 240 240 240 240 233 133  57\n 198 240 240 240 240 240 240 240
+    240 240 240 240 228 178  46 106\n 192 240 240 240 240 240 240 240 240 240 240
+    240 174  74 109 192\n 181 240 240 240 240 240 240 240 240 240 240 162  49  96
+    213 240\n 226 240 240 240 240 240 240 240 230 192  82  63  91 228 240 240\n 212
+    240 225 240 240 207 177 130  86  45  74 158 234 240 240 239\n 204 232 138  59
+    \ 31  47  49  41  49 165 222 240 240 240 240 240\n 216 227  95 108 118  83  56
+    \ 73  46  58  63 225 235 240 240 237\n 240 240 240 240 238 240 240 240 185 118
+    \ 91  86 103 226 240 240\n 212 240 240 240 240 240 240 240 240 240 240  66  11
+    \ 91 240 236\n 225 240 240 240 240 240 240 240 240 240 240 226  76  16 150 234\n
+    240 240 240 240 240 240 240 240 240 240 240 240 202  68   4 195\n 226 240 240
+    240 240 240 240 240 240 240 240 240 240 142  26  14\n 214 240 240 240 240 240
+    240 240 240 240 240 240 240 240  90 156\n 192 236 240 237 234 240 240 219 240
+    231 219 228 240 222 213 238\n 184 240 240 240 240 240 240 240 240 240 240 240
+    240 239 204 125\n 192 240 240 240 240 240 240 240 240 240 240 240 240 238 134
+    \ 57\n 198 240 240 240 240 240 240 240 240 240 240 240 232 188  48 106\n 192 240
+    240 240 240 240 240 240 240 240 240 240 175  68 105 192\n 181 240 240 240 240
+    240 240 240 240 240 235 163  58  96 213 240\n 227 240 240 240 240 240 240 240
+    228 186  92  63 102 229 240 239\n 214 240 220 240 240 210 178 130  86  41  60
+    146 234 240 240 239\n 204 232 134  58  32  60  58  31  59 168 225 240 240 240
+    240 240\n 216 226  85 107 118  87  58  73  46  62  65 225 235 240 240 237\n 240
+    240 240 240 238 240 240 240 185 118  90  82 103 226 240 240\n 212 240 240 240
+    240 240 240 240 240 240 240  53   5  91 240 236\n 225 240 240 240 240 240 240
+    240 240 240 240 225  61  13 150 233\n 240 240 240 240 240 240 240 240 240 240
+    240 240 198  54   3 195\n 226 240 240 240 240 240 240 240 240 240 240 240 240
+    134  15  14\n 214 240 240 240 240 240 240 240 240 240 240 240 240 240  90 156\n\n
+    237 120  53  93 186 240 239 238 240 236 240 235 233 195  16 156\n 200 192 117
+    \ 30  95 204 240 240 240 240 240 240 156  12  26  90\n 216 238 226 170  64  93
+    229 240 240 240 227  92  26  64 142 240\n 240 240 240 228 174  58 104 240 240
+    235 111   9  61 199 240 240\n 226 240 240 240 240 158  62 156 240 225  76  53
+    225 240 240 240\n 217 240 240 240 240 230  80  67 225  65  82 240 240 240 240
+    240\n 231 240 240 240 240 240 185  36 157  62 118 240 240 240 240 240\n 240 240
+    240 240 240 240 228  78  57  37 180 240 240 240 240 240\n 219 240 240 240 240
+    240 240 130  31  64 240 240 240 240 240 240\n 240 240 240 240 240 240 240 177
+    \ 54  53 240 240 240 240 240 240\n 240 240 240 240 240 240 240 207  49  74 240
+    240 240 240 240 240\n 234 240 240 240 240 240 240 240  31 118 238 240 240 240
+    240 240\n 237 240 240 240 240 240 240 240  53 106 240 240 240 240 240 240\n 240
+    240 240 240 240 240 240 220 128  75 240 240 240 240 240 240\n 236 240 240 240
+    240 240 240 240 232 225 240 240 240 240 240 240\n 192 181 192 198 192 181 227
+    214 204 216 240 214 225 240 225 214\n 238 125  57 106 192 240 240 239 240 237
+    240 236 234 195  14 156\n 213 204 133  46 109 213 240 240 240 240 240 240 150
+    \  4  26  90\n 222 239 233 178  74  96 228 240 240 240 226  91  16  68 142 240\n
+    240 240 240 228 174  49  91 234 240 235 103  11  76 202 240 240\n 228 240 240
+    240 240 162  63 158 240 225  86  66 226 240 240 240\n 222 240 240 240 240 240
+    \ 82  74 222  63  91 240 240 240 240 240\n 234 240 240 240 240 240 192  45 165
+    \ 58 118 240 240 240 240 240\n 240 240 240 240 240 240 230  86  49  46 185 240
+    240 240 240 240\n 222 240 240 240 240 240 240 130  41  73 240 240 240 240 240
+    240\n 240 240 240 240 240 240 240 177  49  56 240 240 240 240 240 240\n 240 240
+    240 240 240 240 240 207  47  83 240 240 240 240 240 240\n 234 240 240 240 240
+    240 240 240  31 118 238 240 240 240 240 240\n 237 240 240 240 240 240 240 240
+    \ 59 108 240 240 240 240 240 240\n 240 240 240 240 240 240 240 225 138  95 240
+    240 240 240 240 240\n 238 240 240 240 240 240 240 240 232 227 240 240 240 240
+    240 240\n 194 185 192 198 192 181 226 212 204 216 240 212 225 240 226 214\n 238
+    125  57 106 192 240 239 239 240 237 240 236 233 195  14 156\n 213 204 134  48
+    105 213 240 240 240 240 240 240 150   3  15  90\n 222 239 238 188  68  96 229
+    240 240 240 226  91  13  54 134 240\n 240 240 240 232 175  58 102 234 240 235
+    103   5  61 198 240 240\n 228 240 240 240 240 163  63 146 240 225  82  53 225
+    240 240 240\n 219 240 240 240 240 235  92  60 225  65  90 240 240 240 240 240\n
+    231 240 240 240 240 240 186  41 168  62 118 240 240 240 240 240\n 240 240 240
+    240 240 240 228  86  59  46 185 240 240 240 240 240\n 219 240 240 240 240 240
+    240 130  31  73 240 240 240 240 240 240\n 240 240 240 240 240 240 240 178  58
+    \ 58 240 240 240 240 240 240\n 240 240 240 240 240 240 240 210  60  87 240 240
+    240 240 240 240\n 234 240 240 240 240 240 240 240  32 118 238 240 240 240 240
+    240\n 237 240 240 240 240 240 240 240  58 107 240 240 240 240 240 240\n 240 240
+    240 240 240 240 240 220 134  85 240 240 240 240 240 240\n 236 240 240 240 240
+    240 240 240 232 226 240 240 240 240 240 240\n 192 184 192 198 192 181 227 214
+    204 216 240 212 225 240 226 214\n\n 156  90 240 240 240 240 240 240 240 240 240
+    240 240 240 240 214\n  16  26 142 240 240 240 240 240 240 240 240 240 240 240
+    240 225\n 195  12  64 199 240 240 240 240 240 240 240 240 240 240 240 240\n 233
+    156  26  61 225 240 240 240 240 240 240 240 240 240 240 225\n 235 240  92   9
+    \ 53 240 240 240 240 240 240 240 240 240 240 214\n 240 240 227 111  76  82 118
+    180 240 240 240 238 240 240 240 240\n 236 240 240 235 225  65  62  37  64  53
+    \ 74 118 106  75 225 216\n 240 240 240 240 240 225 157  57  31  54  49  31  53
+    128 232 204\n 238 240 240 240 156  67  36  78 130 177 207 240 240 220 240 214\n
+    239 240 229 104  62  80 185 228 240 240 240 240 240 240 240 227\n 240 204  93
+    \ 58 158 230 240 240 240 240 240 240 240 240 240 181\n 186  95  64 174 240 240
+    240 240 240 240 240 240 240 240 240 192\n  93  30 170 228 240 240 240 240 240
+    240 240 240 240 240 240 198\n  53 117 226 240 240 240 240 240 240 240 240 240
+    240 240 240 192\n 120 192 238 240 240 240 240 240 240 240 240 240 240 240 240
+    181\n 237 200 216 240 226 217 231 240 219 240 240 234 237 240 236 192\n 156  90
+    240 240 240 240 240 240 240 240 240 240 240 240 240 214\n  14  26 142 240 240
+    240 240 240 240 240 240 240 240 240 240 226\n 195   4  68 202 240 240 240 240
+    240 240 240 240 240 240 240 240\n 234 150  16  76 226 240 240 240 240 240 240
+    240 240 240 240 225\n 236 240  91  11  66 240 240 240 240 240 240 240 240 240
+    240 212\n 240 240 226 103  86  91 118 185 240 240 240 238 240 240 240 240\n 237
+    240 240 235 225  63  58  46  73  56  83 118 108  95 227 216\n 240 240 240 240
+    240 222 165  49  41  49  47  31  59 138 232 204\n 239 240 240 234 158  74  45
+    \ 86 130 177 207 240 240 225 240 212\n 240 240 228  91  63  82 192 230 240 240
+    240 240 240 240 240 226\n 240 213  96  49 162 240 240 240 240 240 240 240 240
+    240 240 181\n 192 109  74 174 240 240 240 240 240 240 240 240 240 240 240 192\n
+    106  46 178 228 240 240 240 240 240 240 240 240 240 240 240 198\n  57 133 233
+    240 240 240 240 240 240 240 240 240 240 240 240 192\n 125 204 239 240 240 240
+    240 240 240 240 240 240 240 240 240 185\n 238 213 222 240 228 222 234 240 222
+    240 240 234 237 240 238 194\n 156  90 240 240 240 240 240 240 240 240 240 240
+    240 240 240 214\n  14  15 134 240 240 240 240 240 240 240 240 240 240 240 240
+    226\n 195   3  54 198 240 240 240 240 240 240 240 240 240 240 240 240\n 233 150
+    \ 13  61 225 240 240 240 240 240 240 240 240 240 240 225\n 236 240  91   5  53
+    240 240 240 240 240 240 240 240 240 240 212\n 240 240 226 103  82  90 118 185
+    240 240 240 238 240 240 240 240\n 237 240 240 235 225  65  62  46  73  58  87
+    118 107  85 226 216\n 240 240 240 240 240 225 168  59  31  58  60  32  58 134
+    232 204\n 239 240 240 234 146  60  41  86 130 178 210 240 240 220 240 214\n 239
+    240 229 102  63  92 186 228 240 240 240 240 240 240 240 227\n 240 213  96  58
+    163 235 240 240 240 240 240 240 240 240 240 181\n 192 105  68 175 240 240 240
+    240 240 240 240 240 240 240 240 192\n 106  48 188 232 240 240 240 240 240 240
+    240 240 240 240 240 198\n  57 134 238 240 240 240 240 240 240 240 240 240 240
+    240 240 192\n 125 204 239 240 240 240 240 240 240 240 240 240 240 240 240 184\n
+    238 213 222 240 228 219 231 240 219 240 240 234 237 240 236 192\n\n"
+  PatternWidth: 8
+  BarcodeID: 0
+  MultiConfigFile: 
+  NFTDataName: 
+  currentUseContPoseEstimation: 0
+  currentFiltered: 0
+  currentFilterSampleRate: 30
+  currentFilterCutoffFreq: 15
+  currentNFTScale: 1
 --- !u!1 &1496442279
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,13 +1636,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1562006351}
-  m_LocalRotation: {x: -0.27216026, y: 0.13584733, z: 0.89078504, w: 0.33760384}
-  m_LocalPosition: {x: 6.41, y: -6.94, z: -13.28}
+  m_LocalRotation: {x: -0.46193978, y: -0.19134173, z: 0.19134173, w: 0.84462327}
+  m_LocalPosition: {x: 10, y: -15, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 749452075}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -45, y: -45, z: 45}
 --- !u!1 &1601677874
 GameObject:
   m_ObjectHideFlags: 0
@@ -1748,7 +2175,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 446854239}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2123509604
 MeshRenderer:

@@ -11,7 +11,7 @@ public class PositionControlWithWatson : MonoBehaviour {
 	}
 
 	void Update () {
-		position = transform.position;
+		position = this.transform.position;
 		Text outputText = output.GetComponent<Text>();
 		if (outputText.text.Contains ("Final")) {
 			Debug.Log (outputText.text);

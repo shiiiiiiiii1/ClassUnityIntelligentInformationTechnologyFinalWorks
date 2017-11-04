@@ -1,40 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CreateRandomBlock.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Script/CheckBlock.cs">
     <Files>
-      <File FileName="Assets/Script/OnCollisionEnterChildBlock.cs" Line="6" Column="29" />
-      <File FileName="Assets/Script/CreateRandomBlock.cs" Line="43" Column="29" />
-      <File FileName="Assets/Script/GoDown.cs" Line="15" Column="26" />
-      <File FileName="Assets/Script/PositionControlWithWatson.cs" Line="11" Column="1" />
+      <File FileName="Assets/Script/CreateRandomBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/CreateGuidlineBlock.cs" Line="15" Column="19" />
+      <File FileName="Assets/Script/OnCollisionEnterChildBlock.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/CheckBlock.cs" Line="21" Column="13" />
+      <File FileName="Assets/Script/GoDown.cs" Line="1" Column="1" />
+      <File FileName="Assets/Script/PositionControlWithWatson.cs" Line="10" Column="74" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="ARUnityFinalWorks" expanded="True">
-            <Node name="Assembly-CSharp" expanded="True">
-              <Node name="ARToolKit5-Unity" expanded="True">
-                <Node name="Resources" expanded="True">
-                  <Node name="ardata" expanded="True">
-                    <Node name="markers" expanded="True" />
-                  </Node>
-                </Node>
-              </Node>
-              <Node name="Script" expanded="True">
-                <Node name="CreateRandomBlock.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.NUnit.TestPad">
-        <State name="__root__">
-          <Node name="ARUnityFinalWorks" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />

@@ -15,6 +15,7 @@ public class CreateRandomBlock : MonoBehaviour {
 	void Start () {
 		vector_3 = new Vector3 (ReturnRandomValue(-1, 1), 9, ReturnRandomValue(-1, 1));
 		block = Instantiate (prefab, vector_3, Quaternion.identity) as GameObject;
+		block.transform.parent = this.transform;
 		SetColor (block);
 	}
 
@@ -22,6 +23,7 @@ public class CreateRandomBlock : MonoBehaviour {
 		if (block.GetComponent<GoDown>().enabled == false) {
 			vector_3 = new Vector3 (ReturnRandomValue(-1, 1), 9, ReturnRandomValue(-1, 1));
 			block = Instantiate (prefab, vector_3, Quaternion.identity) as GameObject;
+			block.transform.parent = this.transform;
 			SetColor (block);
 		}
 	}
