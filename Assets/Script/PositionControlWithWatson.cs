@@ -2,8 +2,7 @@
 using UnityEngine.UI;
 
 public class PositionControlWithWatson : MonoBehaviour {
-	public GameObject output;
-
+	private GameObject output;
 	private Vector3 position;
 
 	void Start () {
@@ -14,7 +13,7 @@ public class PositionControlWithWatson : MonoBehaviour {
 		position = this.transform.position;
 		Text outputText = output.GetComponent<Text>();
 		if (outputText.text.Contains ("Final")) {
-			Debug.Log (outputText.text);
+//			Debug.Log (outputText.text);
 			if (outputText.text.Contains ("前")) {
 				transform.position = new Vector3 (position.x, position.y, position.z + 2);
 			}

@@ -5,16 +5,18 @@ using UnityEngine;
 public class CheckGuidlineBlock : MonoBehaviour {
 	public GameObject guidline_group;
 
+	private List<Transform> lists;
+
 	void Start () {
 	}
 
 	void Update () {
-		List<Transform> lists = new List<Transform> (guidline_group.GetComponentsInChildren<Transform>());
+		lists = new List<Transform> (guidline_group.GetComponentsInChildren<Transform>());
 		lists = ListUpdate (lists, guidline_group);
-		Debug.Log ("Guidline block count : " + lists.Count);
-		foreach (Transform child in lists) {
-			Debug.Log ("block name : " + child.name);
-		}
+//		Debug.Log ("Guidline block count : " + lists.Count);
+//		foreach (Transform child in lists) {
+//			Debug.Log ("block name : " + child.name);
+//		}
 	}
 
 	List<Transform> ListUpdate (List<Transform> lists, GameObject obj) {
@@ -23,6 +25,10 @@ public class CheckGuidlineBlock : MonoBehaviour {
 				lists.RemoveAt (i);
 			}
 		}
+		return lists;
+	}
+
+	public List<Transform> GetLists() {
 		return lists;
 	}
 }

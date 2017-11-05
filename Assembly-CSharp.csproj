@@ -71,6 +71,7 @@
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARTransitionalCamera.cs" />
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\ARUtilityFunctions.cs" />
      <Compile Include="Assets\ARToolKit5-Unity\Scripts\PluginFunctions.cs" />
+     <Compile Include="Assets\Script\CheckBlock.cs" />
      <Compile Include="Assets\Script\CheckGuidlineBlock.cs" />
      <Compile Include="Assets\Script\CheckRandomBlock.cs" />
      <Compile Include="Assets\Script\CreateGuidlineBlock.cs" />

@@ -13,7 +13,7 @@ public class CreateRandomBlock : MonoBehaviour {
 	private GameObject block;
 
 	void Start () {
-		vector_3 = new Vector3 (ReturnRandomValue(-1, 1), 9, ReturnRandomValue(-1, 1));
+		vector_3 = new Vector3 (ReturnRandomValue(-1, 1), this.transform.position.y, ReturnRandomValue(-1, 1));
 		block = Instantiate (prefab, vector_3, Quaternion.identity) as GameObject;
 		block.transform.parent = this.transform;
 		SetColor (block);
@@ -21,7 +21,10 @@ public class CreateRandomBlock : MonoBehaviour {
 
 	void Update () {
 		if (block.GetComponent<GoDown>().enabled == false) {
-			vector_3 = new Vector3 (ReturnRandomValue(-1, 1), 9, ReturnRandomValue(-1, 1));
+			if (block.GetComponent<MeshRenderer> ().enabled == false) {
+				Destroy (block);
+			}
+			vector_3 = new Vector3 (ReturnRandomValue(-1, 1), this.transform.position.y, ReturnRandomValue(-1, 1));
 			block = Instantiate (prefab, vector_3, Quaternion.identity) as GameObject;
 			block.transform.parent = this.transform;
 			SetColor (block);
